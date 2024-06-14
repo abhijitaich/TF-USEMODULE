@@ -7,7 +7,7 @@ resource "azurerm_resource_group" "myrg" { #this is the refrence it will be mana
 }
 
 module "vnet" {
-  source = "github.com/abhijitaich/TF-Modules/tree/master/modules/vnet"
+  source = "github.com/abhijitaich/TF-Modules/tree/modules/vnet"
   business_devision = "sap"
 environment = "stage"
 resource_group_name = "rg-default"
